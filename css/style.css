@@ -1,5 +1,65 @@
+/* font-family: 'Happy Monkey', cursive;
+font-family: 'Luckiest Guy', cursive; 
+font-family: 'Didact Gothic', sans-serif;*/
+
+/* FONTS */
+h1, h3, .navbar-brand {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h2, h4, button, .navbar-nav {
+    font-family: 'Happy Monkey', cursive;
+}
+p, label {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: .75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+/* NAVBAR */
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+/* SPLASHSCREEN */
 .splash-screen {
-    background-image: url('../img/maxime-bhm-icyZmdkCGZ0-unsplash.jpg');
-    background-size: cover;
-    height: 92vh;
+    /* background-image: url('../img/maxime-bhm-icyZmdkCGZ0-unsplash.jpg'); */
+    /* background-size: cover; */
+    height: 85vh;
+}
+
+.square-btn {
+    font-size: 1.25rem;
+    padding: 5px 35px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.circle-img {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.pill-btn {
+    font-size: 1.5rem;
+    min-width: 200px;
+    border-radius: 50px;
+    background-color: transparent;   
+}
+
+.rounded-img {
+    border: 4px solid black;
+    border-radius: 25px;
+}
+.form-check label {
+    font-size: .75rem;
 }

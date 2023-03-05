@@ -4,13 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Boro's Color Run!</title>
+        <!-- Vue.js -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <!-- BOOTSTRAP'S CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Happy+Monkey&family=Luckiest+Guy&display=swap" rel="stylesheet">
         <!-- MY CSS -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-      <div class="container-fluid">
+      <div id="app" class="container-fluid text-center">
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -21,19 +27,16 @@
             <a class="navbar-brand" href="#">Boro Color Run</a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="registration.html">Registration</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Registration</a>
+                <a class="nav-link" href="sponsors.html">Sponsor Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sponsor Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
           </div>
         </div>
@@ -41,27 +44,85 @@
     <!-- END NAVIGATION -->
 
     <!-- SPLASH SCREEN -->
-    <div class="row">
-        <div class="col splash-screen text-center">
-            <div class="row">
-                <div class="col">
-                    <h1>Boro Color Run</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h2>{DATE}</h2>
-                </div>
-                <div class="col">
-                    <h2>{LOCATION}</h2>
-                </div>
-                <div class="col">
-                    <h2>{TIME}</h2>
-                </div>
-            </div>
+    <div class="row justify-content-center mt-3">
+      
+        <div class="row my-5 justify-content-center">
+          <div class="col-8 col-md-3">
+            <img class="img-fluid" src="img/run-logo.png" alt="">
+          </div>
         </div>
+           
+        <!-- REGISTER BUTTON ROW -->
+        <div class="row mb-3">
+          <div class="col">
+              <button class="square-btn">REGISTER NOW!</button>
+          </div>
+      </div>
+      <!-- DETAILS ROW -->
+            <div class="row my-5">
+                <div class="col-12 col-lg-4">
+                    <h3>May 20th, 2023</h3>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3>2 Robertsville Road</h3>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3>10:00 AM</h3>
+                </div>
+            </div>
+        
     </div><!-- Photo by <a href="https://unsplash.com/@maximebhm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maxime Bhm</a> on <a href="https://unsplash.com/photos/icyZmdkCGZ0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
     <!-- END SPLASH SCREEN -->
+    <div class="row justify-content-around mt-2">
+      <div class="col-10 col-md-3">
+        <div class="circle-img">
+          <img class="img-fluid" src="img/kristin-o-karlsen--HVxl2AR2DA-unsplash.jpg" alt="">
+        </div>
+        <h3>5K Walk/Run</h3>
+        <p>Wear white to pass through clouds of color and get tie-dyed for a good cause. The run begins at and ends
+        </p>
+      </div>
+      <div class="col-10 col-md-3">
+        <div class="circle-img">
+          <img class="img-fluid" src="img/kristin-o-karlsen--HVxl2AR2DA-unsplash.jpg" alt="">
+        </div>
+        <h3>Prizes</h3>
+        <p>Top 3 finishers will receive prizes from our local community sponsors!
+        </p>
+      </div>
+      <div class="col-10 col-md-3">
+        <div class="circle-img">
+          <img class="img-fluid" src="img/kristin-o-karlsen--HVxl2AR2DA-unsplash.jpg" alt="">
+        </div>
+        <h3>Vendors</h3>
+        <p>Local vendors will be supporting the Senior Class!
+        </p>
+      </div>
+    </div>
+    <div class="row text-center justify-content-center my-5">
+      <div class="col-8 col-md-4 mb-3 mb-md-0">
+      <button class="pill-btn">Sponsors</button>
+      </div>
+      <div class="col-8 col-md-4">
+      <button class="pill-btn">Sign Up</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h1>Our Story</h1>
+        <p>
+          United by a passion for our school and local neighborhood, our senior class officers have made it their goal to create a community event that could pose as both a clas fundraiser and a day to celebrate our school community. 
+          <br>
+          The First Annual Freehold Boro Color Run will be a day for students, alumni, family, faculty, and the local community to come together.</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <h1>Support Our Seniors!</h1>
+      <img src="..." alt="">
+    </div>
+    <footer>
+
+    </footer>
     </div> <!-- End container-xl -->
     <!-- BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
