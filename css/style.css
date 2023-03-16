@@ -4,14 +4,20 @@ font-family: 'Didact Gothic', sans-serif;*/
 
 /* Font Sizes */
 :root {
-    --fs-p: clamp(0.75rem, 0.75rem + 1.0417vw, 1.125rem);
+    --fs-p: clamp(0.75rem, 0.75rem + 1vw, 1rem);
     --fs-h1: clamp(1.875rem, -0.7212rem + 7.2115vw, 3.75rem);
     --fs-h3: clamp(1.25rem, 0.3846rem + 2.4038vw, 1.875rem);
+    --fs-h4: clamp(1rem, 1rem + 2.vw, 2rem);
+    --fs-small: clamp(0.5rem, 0.5rem + .75vw, .75rem);
     --icon-size: clamp(5rem, 4rem + 12vw, 8rem);
     --fs-nav: clamp(1rem, 0.5rem + 1.75vw, 1.3rem);
+    --fs-button: clamp(.25rem, 0.3846rem + 2.4038vw, 1.875rem);
 }
 
 /* FONTS */
+small {
+    font-size: var(--fs-small);
+}
 h1, h3, .navbar-brand {
     font-family: 'Luckiest Guy', cursive;
 }
@@ -30,7 +36,7 @@ h3 {
     font-size: var(--fs-h3);
 }
 h4 {
-    font-size: 2rem;
+    font-size: var(--fs-h4)
 }
 /* NAVBAR */
 .nav-link, .navbar-brand {
@@ -52,7 +58,7 @@ h4 {
 .square-btn, .pill-btn {
     color: black;
     text-decoration: none;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-button);
     padding: 5px 35px;
     border: 2px solid black;
     border-radius: 15px;
@@ -61,7 +67,7 @@ h4 {
 
 .pill-btn {
     display: inline-block;
-    width: clamp(18rem, 10rem + 5vw, 20rem);
+    width: 100%;
     border-radius: 50px;
 }
 
@@ -85,4 +91,7 @@ h4 {
 }
 .row {
     justify-content: center;
+}
+img.rounded {
+    border-radius: 20px!important;
 }
