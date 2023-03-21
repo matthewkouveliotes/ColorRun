@@ -116,13 +116,18 @@ https://coolors.co/palette/ffbe0b-fb5607-ff006e-8338ec-3a86ff
 #cardThree{
     background-color: #8338EC;
 }
+.backgroundpurp{
+    background-color: #8338EC;
+}
 #buttonOne{
     background-color: #FFBE0B;
 }
 .buttonTwo{
     background-color: #3A86FF;
 }
-
+.buttonThree{
+    background-color: #FB5607;
+}
 .container-fluid{
     --bs-gutter-x: 0rem!important;
 }
@@ -154,4 +159,88 @@ https://coolors.co/palette/ffbe0b-fb5607-ff006e-8338ec-3a86ff
 }
 .fillerone{
     height: 3.5vw;
+}
+
+.custom-shape-divider-top-1679407345 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1679407345 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1679407345 .shape-fill {
+    fill: #FFBE0B;
+}
+.navbar-top-custom{
+    background-color: #FFBE0B;
+}
+/* 
+ */
+
+ .custom-shape-divider-bottom-1679409242 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679409242 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1679409242 .shape-fill {
+    fill: #FB5607;
+}
+
+.custom-shape-divider-bottom-1679409559 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679409559 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-bottom-1679409559 .shape-fill {
+    fill: #3A86FF;
+}
+
+.custom-shape-divider-bottom-1679409891 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679409891 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 156px;
+}
+
+.custom-shape-divider-bottom-1679409891 .shape-fill {
+    fill: #8338EC;
 }
